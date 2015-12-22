@@ -19,12 +19,15 @@ public class Round {
             return baseScore + nextRound.firstBall;
         }
         if (isStrikeRound()){
+            if (nextRound.isStrikeRound()){
+                return baseScore+nextRound.baseScore+nextRound.nextRound.firstBall;
+            }
             return baseScore +nextRound.firstBall+nextRound.secondBall;
         }
         return baseScore;
     }
 
-    private boolean isStrikeRound() {
+    public boolean isStrikeRound() {
         return firstBall == 10 || secondBall == 10;
     }
 

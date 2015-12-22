@@ -27,4 +27,24 @@ public class RoundTest {
         round1.setNextRound(round2);
         assertEquals(13,round1.calculateTotalScore());
     }
+
+    @Test
+    public void shouldCalculateScoreWithStrikeBonusAndNextRoundIsStrike() {
+        Round round1 = new Round(10,0);
+        Round round2 = new Round(10,0);
+        Round round3 = new Round(3,4);
+        round1.setNextRound(round2);
+        round2.setNextRound(round3);
+        assertEquals(23,round1.calculateTotalScore());
+    }
+
+    @Test
+    public void shouldCalculateScoreWithStrikeBonusAndNextRoundIsStrikeTwo() {
+        Round round1 = new Round(10,0);
+        Round round2 = new Round(0,10);
+        Round round3 = new Round(3,4);
+        round1.setNextRound(round2);
+        round2.setNextRound(round3);
+        assertEquals(23,round1.calculateTotalScore());
+    }
 }
