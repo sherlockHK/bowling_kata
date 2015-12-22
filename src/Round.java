@@ -15,16 +15,20 @@ public class Round {
     }
 
     public int calculateTotalScore() {
-        if (isSpareRound()){
-            return baseScore + nextRound.firstBall;
+        int bonus = 0;
+        if (isSpareRound()) {
+            bonus = nextRound.firstBall;
         }
-        if (isStrikeRound()){
-            if (nextRound.isStrikeRound()){
-                return baseScore+nextRound.baseScore+nextRound.nextRound.firstBall;
+
+        if (isStrikeRound()) {
+            if (nextRound.isStrikeRound()) {
+                bonus = nextRound.baseScore + nextRound.nextRound.firstBall;
+            } else {
+                bonus = nextRound.baseScore;
             }
-            return baseScore +nextRound.firstBall+nextRound.secondBall;
         }
-        return baseScore;
+
+        return baseScore + bonus;
     }
 
     public boolean isStrikeRound() {
