@@ -16,6 +16,9 @@ public class Round {
         if (firstBall != 10 && firstBall+secondBall == 10 && nextRound != null){
             return firstBall+secondBall+nextRound.firstBall;
         }
+        if (firstBall == 10 || secondBall == 10 || firstBall+secondBall==10){
+            return firstBall+secondBall+nextRound.firstBall+nextRound.secondBall;
+        }
         return firstBall+secondBall;
     }
 

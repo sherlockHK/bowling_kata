@@ -13,10 +13,18 @@ public class RoundTest {
     }
 
     @Test
-    public void shouldCalculateScoreWithBonus() {
+    public void shouldCalculateScoreWithSpareBonus() {
         Round round1 = new Round(1,9);
         Round round2 = new Round(4,6);
         round1.setNextRound(round2);
         assertEquals(14,round1.calculateTotalScore());
+    }
+
+    @Test
+    public void shouldCalculateScoreWithStrikeBonus() {
+        Round round1 = new Round(10,0);
+        Round round2 = new Round(1,2);
+        round1.setNextRound(round2);
+        assertEquals(13,round1.calculateTotalScore());
     }
 }
