@@ -2,10 +2,12 @@ public class Round {
     private int firstBall;
     private int secondBall;
     private Round nextRound;
+    private int baseScore;
 
     public Round(int firstBall, int secondBall) {
         this.firstBall = firstBall;
         this.secondBall = secondBall;
+        baseScore = firstBall + secondBall;
     }
 
     public void setNextRound(Round nextRound) {
@@ -13,13 +15,21 @@ public class Round {
     }
 
     public int calculateTotalScore() {
-        if (firstBall != 10 && firstBall+secondBall == 10 && nextRound != null){
-            return firstBall+secondBall+nextRound.firstBall;
+        if (isSpareRound()){
+            return baseScore + nextRound.firstBall;
         }
-        if (firstBall == 10 || secondBall == 10 || firstBall+secondBall==10){
-            return firstBall+secondBall+nextRound.firstBall+nextRound.secondBall;
+        if (isStrikeRound()){
+            return baseScore +nextRound.firstBall+nextRound.secondBall;
         }
-        return firstBall+secondBall;
+        return baseScore;
+    }
+
+    private boolean isStrikeRound() {
+        return firstBall == 10 || secondBall == 10;
+    }
+
+    private boolean isSpareRound() {
+        return firstBall != 10 && this.baseScore == 10;
     }
 
 }
