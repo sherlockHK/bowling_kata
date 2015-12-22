@@ -14,6 +14,14 @@ public class Round {
         this.nextRound = nextRound;
     }
 
+    public int getFirstBall() {
+        return firstBall;
+    }
+
+    public int getSecondBall() {
+        return secondBall;
+    }
+
     public int calculateTotalScore() {
         int bonus = 0;
         if (isSpareRound()) {
@@ -21,7 +29,7 @@ public class Round {
         }
 
         if (isStrikeRound()) {
-            if (nextRound.isStrikeRound()) {
+            if (nextRound.isStrikeRound() && nextRound.nextRound != null) {
                 bonus = nextRound.baseScore + nextRound.nextRound.firstBall;
             } else {
                 bonus = nextRound.baseScore;
