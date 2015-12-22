@@ -23,6 +23,10 @@ public class Round {
     }
 
     public int calculateTotalScore() {
+        return baseScore + getBonus();
+    }
+
+    private int getBonus() {
         int bonus = 0;
         if (isSpareRound()) {
             bonus = nextRound.firstBall;
@@ -35,8 +39,7 @@ public class Round {
                 bonus = nextRound.baseScore;
             }
         }
-
-        return baseScore + bonus;
+        return bonus;
     }
 
     public boolean isStrikeRound() {

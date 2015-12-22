@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d45115b-1865-4104-81a7-bb453b8d62f2" name="Default" comment="calculate game total score with 9 rounds.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/LastRound.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/bowling_test/Round.class" afterPath="$PROJECT_DIR$/out/production/bowling_test/Round.class" />
+    <list default="true" id="1d45115b-1865-4104-81a7-bb453b8d62f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Round.java" afterPath="$PROJECT_DIR$/src/Round.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GameTest.java" afterPath="$PROJECT_DIR$/test/GameTest.java" />
     </list>
     <ignored path="bowling_test.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RoundTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RoundTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/RoundTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4391635">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Round.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Round.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Round.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4296578">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#354#355#0" expanded="true" />
                 <element signature="e#396#397#0" expanded="true" />
@@ -92,10 +89,12 @@
                 <element signature="e#461#462#0" expanded="true" />
                 <element signature="e#495#496#0" expanded="true" />
                 <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1122#1123#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+                <element signature="e#613#614#0" expanded="true" />
+                <element signature="e#1088#1089#0" expanded="true" />
+                <element signature="e#1146#1147#0" expanded="true" />
                 <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1246#1247#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,9 +158,9 @@
         <option value="$PROJECT_DIR$/src/Calculator.java" />
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/test/RoundTest.java" />
-        <option value="$PROJECT_DIR$/src/Round.java" />
         <option value="$PROJECT_DIR$/src/LastRound.java" />
         <option value="$PROJECT_DIR$/test/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/Round.java" />
       </list>
     </option>
   </component>
@@ -280,7 +279,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoundTest">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration default="false" name="GameTest.shouldCalculateNineRoundGameTotalScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="bowling_test" />
@@ -804,8 +803,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.RoundTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.RoundTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.shouldCalculatePerfectGameTotalScore" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.shouldCalculateNineGameTotalScore" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.shouldCalculateNineRoundGameTotalScore" />
@@ -824,7 +823,7 @@
       <updated>1450091991621</updated>
       <workItem from="1450091994285" duration="14000" />
       <workItem from="1450092037470" duration="1633000" />
-      <workItem from="1450790558685" duration="7000000" />
+      <workItem from="1450790558685" duration="7144000" />
     </task>
     <task id="LOCAL-00001" summary="calculate spare round total score">
       <created>1450794186608</created>
@@ -862,18 +861,24 @@
       <option name="project" value="LOCAL" />
       <updated>1450798276453</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="calculate game total score with 10 rounds.">
+      <created>1450799119065</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1450799119065</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
     <history-entry file="GameTest - 2015.12.22 at 23h 44m 52s.xml">
       <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_shouldCalculatePerfectGameTotalScore - 2015.12.22 at 23h 38m 32s.xml">
-      <configuration name="GameTest.shouldCalculatePerfectGameTotalScore" configurationId="JUnit" />
+    <history-entry file="GameTest - 2015.12.22 at 23h 47m 03s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GameTest_shouldCalculatePerfectGameTotalScore - 2015.12.22 at 23h 39m 14s.xml">
-      <configuration name="GameTest.shouldCalculatePerfectGameTotalScore" configurationId="JUnit" />
+    <history-entry file="GameTest - 2015.12.22 at 23h 47m 08s.xml">
+      <configuration name="GameTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GameTest_shouldCalculatePerfectGameTotalScore - 2015.12.22 at 23h 39m 34s.xml">
       <configuration name="GameTest.shouldCalculatePerfectGameTotalScore" configurationId="JUnit" />
@@ -898,7 +903,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8647000" />
+    <option name="totallyTimeSpent" value="8791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1432" height="876" extended-state="6" />
@@ -948,7 +953,8 @@
     <MESSAGE value="two serial round is strike,calculate total score correctly." />
     <MESSAGE value="refactor" />
     <MESSAGE value="calculate game total score with 9 rounds." />
-    <option name="LAST_COMMIT_MESSAGE" value="calculate game total score with 9 rounds." />
+    <MESSAGE value="calculate game total score with 10 rounds." />
+    <option name="LAST_COMMIT_MESSAGE" value="calculate game total score with 10 rounds." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -963,30 +969,6 @@
           <line>15</line>
           <properties />
           <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/LastRound.java</url>
-          <line>10</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Round.java</url>
-          <line>32</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Round.java</url>
-          <line>31</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Round.java</url>
-          <line>34</line>
-          <properties />
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="12" />
@@ -1023,10 +1005,12 @@
             <element signature="e#461#462#0" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
             <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1039,32 +1023,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LastRound.java">
+    <entry file="file://$PROJECT_DIR$/test/RoundTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
-            <element signature="e#267#268#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Round.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#495#496#0" expanded="true" />
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1122#1123#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1081,6 +1045,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/LastRound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1091,12 +1066,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/RoundTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Round.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4391635">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4296578">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#495#496#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1146#1147#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1246#1247#0" expanded="true" />
           </folding>
         </state>
       </provider>
